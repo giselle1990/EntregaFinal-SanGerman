@@ -1,16 +1,27 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Clientes</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>Registro de Clientes</h1>
+
+    <!-- Formulario de Registro -->
     <form id="formRegistrar">
-        <input type="text" id="nombre" placeholder="Nombre">
-        <input type="number" id="edad" placeholder="Edad">
-        <input type="email" id="email" placeholder="Email">
-        <input type="tel" id="telefono" placeholder="Teléfono">
+        <input type="text" id="nombre" placeholder="Nombre" required>
+        <input type="number" id="edad" placeholder="Edad" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="tel" id="telefono" placeholder="Teléfono" required>
         <button type="submit">Registrar Cliente</button>
     </form>
+
+    <!-- Buscador -->
+    <input type="text" id="buscador" placeholder="Buscar cliente...">
+
+    <!-- Carrusel -->
     <div class="carousel-container">
         <div class="carousel-slide">
             <div class="carousel-item"><img src="https://styles.redditmedia.com/t5_5blkvq/styles/communityIcon_t5ji6wuld2z71.jpg?format=pjpg&s=1672be49333cd14749784be8bbc3c968a033d8e0" alt="Slide 1"></div>
@@ -22,10 +33,16 @@
             <button class="carousel-button" id="next">&gt;</button>
         </div>
     </div>
-    
+
+    <!-- Contenedor de Cards -->
+    <div id="contenedor-cards"></div>
+
     <div id="clientesList"></div>
-    
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="clientes.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
+
