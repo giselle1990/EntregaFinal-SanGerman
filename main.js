@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const offset = -currentIndex * 100;
       document.querySelector('.carousel-slide').style.transform = `translateX(${offset}%)`;
   }
-
   nextButton.addEventListener('click', () => {
       showSlide(currentIndex + 1);
   });
