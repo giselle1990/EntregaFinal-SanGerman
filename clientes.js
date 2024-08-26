@@ -27,7 +27,6 @@ function mostrarClientes(clientes) {
         }
     });
 }
-
 // Función para cargar datos de la API y guardarlos en localStorage
 async function cargarDatosDeAPI() {
     try {
